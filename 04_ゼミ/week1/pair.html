@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>共通点は何でしょう</h1>
+    <button id="button1">楽器</button>
+    <button id="button2">誕生月</button>
+    <button id="button3">好きなアニメ</button>
+    <div id="display"></div>
+    <script>
+      const Button1 = document.getElementById("button1")
+      const Button2 = document.getElementById("button2")
+      const Button3 = document.getElementById("button3")
+      const display = document.getElementById("display")
+      Button1.onclick = function () {
+        display.textContent = "正解!  2人ともお箏をやってました!!"
+      }
+      Button2.onclick = function () {
+        display.textContent = "残念！"
+      }
+      Button3.onclick = function () {
+        display.textContent = "正解!"
+      }
+    </script>
+  </body>
+</html>

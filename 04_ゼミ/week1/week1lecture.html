@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScriptの変数・定数・代入</title>
+  </head>
+  <body>
+    <h1>データ型について</h1>
+    "Number: 数です。1とか2とか1.5とかもそうです"//
+    文字列型:文字です。””で囲います。; Boolean型:
+    真偽値です。trueかfalseかの二つしかありません。比較演算子を使って真偽値を表す;
+    ===は、データ型まで同じかどうか// const x=2; const boolean_test= x===3;
+    console.log(boolean_test); オブジェクト型: const nonoka={
+    name='nonoka';　//キー:バリュー=>プロパティ age='22';
+    hobby:["スノボ","スポーツ"] family:{ papaname='tarou' mamaname='akiko'
+    //オブジェクトの中にオブジェクトが取れる } } nonoka.nameでアクセスできる。
+
+    <h1>DOMについて</h1>
+    <div id="youso"></div>
+    <button id="button">押せば変わるよ</button>
+    <script>
+      const element = document.getElementById("youso")
+      const Button = document.getElementById("button")
+      console.log(element)
+      Button.onclick = function () {
+        element.textcontent = "DOMを通じて変えたよ!"
+      }
+    </script>
+  </body>
+</html>
