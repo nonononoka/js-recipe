@@ -1,3 +1,36 @@
-//三項演算子 dengen?(trueだったら)(falseだったら) //変数の値に-は使えない const
-div=document.createElement("div") dic.textContent='□'.repeat(count)
-displayRireki.append(div)
+//三項演算子 dengen?(trueだったら)(falseだったら) //変数の値に-は使えない
+//const div=document.createElement("div") //dic.textContent='□'.repeat(count)
+//displayRireki.append(div) ・ブロック要素とインライン要素
+ブロック要素(勝手に改行される)
+<h1>h1たぐ</h1>
+//勝手に改行される
+<div>//勝手に改行される</div>
+<p>pタグ</p>
+display:inline;ってすればインライン要素みたいに使える
+インライン要素(勝手に改行されない)
+<span> スパン </span>
+
+boder:1px solid black; width:200px; でボーダーつけられる
+インライン要素は、幅を決めることができない。初めて知ったw
+中の文字列に合わせて勝手に要素の大きさを決める
+display:block;でブロック要素みたいに使える ・marginとpadding p{ padding:20px; }
+デフォルトでmarginが16pxって決まってる。 ・flexbox
+<div class="parent">
+  <div class="children">1</div>
+  <div class="children">2</div>
+  <div class="children">3</div>
+</div>
+
+.parent{ display:flex; flex-direction:column(縦に) flex-wrap:wrap; } .children{
+width:100px; height:100px; border:1px solid black text-align:center; }
+・positionについて
+
+<div class="parent">
+  <div class="children">1</div>
+  <div class="children">2</div>
+  <div class="children">3</div>
+</div>
+<button>ボタン</button>
+
+.button{ display:block; width:300px; height:300px;
+position:absolute(topとleftを指定しなきゃいけない) top:300px; left:300px; }
