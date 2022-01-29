@@ -1,12 +1,12 @@
-const genkiFunction = function (number) {
-  // n を 1 から、 number まで、 値を 1 ずつ増やしながら、 for の {} の中身を繰り返す
-  for (let n = 1; n <= number; n++) {
-    if (n % 3 === 0) {
-      console.log(`${n}!!!!!`)
-    } else if (String(n).includes("3")) {
-      console.log(`${n}!!!!!`)
-    } else {
-      console.log(n)
-    }
+let n = 0
+
+const genkiFunction = function () {
+  if (n % 3 === 0) {
+    console.log(`${n}!!!!!`)
+  } else {
+    console.log(n)
   }
+  n++
 }
+
+setInterval(genkiFunction, 1000)
