@@ -1,17 +1,24 @@
 const inputElement = document.getElementById("input-todo")
-const container = document.getElementById("cards-container")
-const addButton = document.getElementById("add-button")
+const container1 = document.getElementById("cards-container1")
+const container2 = document.getElementById("cards-container2")
+const AddButton = document.getElementById("add-button")
 
 // 追加ボタンを押したときの処理を登録
-inputElement.onkeydown = function (e) {
+inputElement.onkeydown = function () {
   if (event.key === "Enter") {
     // カードを作成する
     const card = createCard(inputElement.value)
-    container.append(card)
+    container1.append(card)
 
     // 入力欄を空にする
     inputElement.value = ""
   }
+}
+
+AddButton.onclick = function () {
+  const inputElement = document.createElementById("input")
+  inputElement.className = "input-todo"
+  container2.append(inputElement)
 }
 
 // 共通の処理：テキストからカードを作成する

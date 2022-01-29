@@ -7,21 +7,20 @@ const feedback = document.getElementById("feedback")
 
 // クイズの内容
 const quiz = {
-  text: "この星の名前は何でしょう？",
-  image: "Ganymede.jpg",
+  text: "この探偵の名前は何でしょう？",
+  image: "sherlock-holmes.png",
   choices: [
     {
-      text: "ゴリアテ",
-      feedback:
-        "残念！ゴリアテは、旧約聖書に登場するダビデに石で殺される巨人だよ。",
+      text: "シャーロックホームズ",
+      feedback: "正解！",
     },
     {
-      text: "ゼニガメ",
-      feedback: "残念！ゼニガメは、クサガメまたはニホンイシガメの幼体だよ。",
+      text: "エスキュールポアロ",
+      feedback: "残念！",
     },
     {
-      text: "ガニメデ",
-      feedback: "正解！ガニメデは、木星の第三惑星だよ！",
+      text: "ミスマーブル",
+      feedback: "残念！",
     },
   ],
 }
