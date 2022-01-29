@@ -1,10 +1,14 @@
 const figure = document.getElementById("figure")
-const Button = document.getElementById("button")
 
 figure.onclick = function () {
-  figure.classList.toggle("rounded")
-}
-
-Button.onclick = function () {
-  figure.classList.toggle("rounded")
+  if (figure.className === "square") {
+    figure.classList.add("rounded")
+    figure.classList.remove("square")
+  } else if (figure.className === "rounded") {
+    figure.classList.add("triangle")
+    figure.classList.remove("rounded")
+  } else {
+    figure.classList.add("square")
+    figure.classList.remove("triangle")
+  }
 }

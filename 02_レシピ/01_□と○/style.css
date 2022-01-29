@@ -5,9 +5,16 @@
 }
 
 .rounded {
+  width: 100px;
+  height: 100px;
+  background-color: black;
   border-radius: 50px;
 }
 
-.transition {
-  transition: all 1s;
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid black;
 }
