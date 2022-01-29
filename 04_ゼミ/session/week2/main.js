@@ -1,6 +1,7 @@
 const Addbutton = document.getElementById("add-button")
 const MemoInput = document.getElementById("memo-input")
 const MemoContainer = document.getElementById("memo-container")
+let memos = ["memo1", "memo2", "memo3"]
 
 Addbutton.onclick = function () {
   const memo = document.createElement("div")
@@ -13,6 +14,7 @@ const Add = function (input, content) {
   content.textContent = input.value
   MemoContainer.append(content)
   input.value = ""
+  //memos.push(input.value)
 }
 
 const Delete = function (content, Button) {
@@ -23,3 +25,5 @@ const Delete = function (content, Button) {
     content.remove()
   }
 }
+
+//div.textContent=memo[0]みたいな感じでやるといいよ！
