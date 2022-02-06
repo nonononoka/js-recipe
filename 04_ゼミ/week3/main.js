@@ -20,3 +20,5 @@ for (let i = 0; i < aisatsu.length; i++) {
 //"34".includes("3")は34は3を持っているか判定
 
 //const memos = [{ text: "こんにちは", createdAt: new Date() }]
+
+if()
