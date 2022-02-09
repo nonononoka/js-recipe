@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="main">
+      <h3>入力画面</h1>
+      <input type="number" v-model="money" />
+      入力額:{{ money }}
+      <button v-on:click="nyukin">入金</button>
+      <button v-on:click="shukin" v-bind:disabled="activeSubmit">出金</button>
+
+      <h3>口座残高</h1>
+        残高:{{ zankin }}円
+
+        <h3>取引記録</h3>
+        <div v-for="trihiki in trihikis">
+            <div>
+            操作:{{ trihiki.type }}<br>
+            金額:{{ trihiki.money }}<br>
+            日付:{{ trihiki.date }}
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
